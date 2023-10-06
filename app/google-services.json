@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768346595613",
+    "project_id": "upload-ds3t-thiago",
+    "storage_bucket": "upload-ds3t-thiago.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768346595613:android:26f57f37dc3806dbdc41f4",
+        "android_client_info": {
+          "package_name": "br.senai.sp.jandira.upload_ds3t"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBub1YWLErvmJPxvq6qA2dNGd1vcoXjUko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
