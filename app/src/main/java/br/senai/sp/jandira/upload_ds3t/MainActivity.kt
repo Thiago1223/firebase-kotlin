@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.upload_ds3t
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         firebaseFirestore = FirebaseFirestore.getInstance()
     }
 
-    // LANÇADOR DE RECURSOS EXTERNOS DA APLICAÇÃO
+    // LANÇADOR DE RECURSOS EXTERNOS DA APLICAÇÃO (GALERIA DE IMAGENS)
     private val resultLauncher = registerForActivityResult(ActivityResultContracts.GetContent()){
 
         imageUri = it
@@ -59,6 +60,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.uploadBtn.setOnClickListener{
             uploadImage()
+        }
+
+        binding.showAllBtn.setOnClickListener {
+            startActivity(Intent(this, ImagesFeed::class.java))
         }
 
     }
